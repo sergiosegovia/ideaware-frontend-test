@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sergio Segovia <hola@sergiosegovia.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiosegovia/ideaware-frontend-test"
+  },
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
