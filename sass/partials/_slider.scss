@@ -1,0 +1,21 @@
+#slideshow {
+  height: 430px;
+  position: relative;
+  width: 100%;
+  background-image: url('../assets/slide1_bg.jpg');
+}
+
+#slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#slideshow img.last-current {
+  z-index: 9;
+}
+
+#slideshow img.current {
+  z-index: 2;
+}

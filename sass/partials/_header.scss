@@ -1,3 +1,152 @@
-header {
-  background-color: red;
+.laptop {
+  z-index: 100;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  color: white;
+}
+
+.laptop h1 {
+  font-size: 2em;
+  font-weight: $bold;
+  margin-top: 40px;
+}
+
+.laptop p {
+  font-size: 1.5em;
+  font-weight: $thin;
+  margin-bottom: 40px;
+}
+
+.laptop .container {
+  text-align: center;
+}
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  height: 300px;
+  @include flexbox;
+  @include align-items(center);
+  text-align: center;
+  position: relative;
+  background-image: url("../assets/footer_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer .social {
+  margin-top: 40px;
+}
+
+.footer .social li a {
+  color: #2a758c;
+}
+
+.footer .social li a:hover,
+.footer .social li a:focus {
+  color: $main-color;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer p:first-child {
+  font-size: 1.5em;
+}
+
+.footer p:nth-child(2) {
+  font-weight: $bold;
+  font-size: 2em;
+}
+
+input.form-control {
+  border-radius: 20px;
+}
+
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 40px;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+.filter {
+
+}
+
+.btn-default {
+  border: none;
+}
+
+.btn-default:hover {
+  background-color: transparent;
+}
+
+.main-text {
+  margin: 80px 0 40px 0;
+}
+
+.pictures {
+  margin: 40px 0;
+}
+
+.navbar {
+  padding: 1.5em 0;
+  margin-bottom: 0;
+  background: white;
+}
+
+.navbar-brand {
+  padding: 0 0 0 15px;
+}
+
+.navbar-brand>img {
+  max-width: 180px;
+}
+
+.navbar-toggle {
+  padding: 0;
+}
+
+.navbar-toggle .icon-bar {
+  background: $main-color;
+}
+
+.instagram {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .main-text {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .main-text {
+    margin-top: 350px;
+  }
+
+  .instagram {
+    margin-top: 80px;
+  }
 }
